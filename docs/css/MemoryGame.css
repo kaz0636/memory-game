@@ -58,12 +58,12 @@ body {
 .memory--menu-bar .left {
   text-align: left;
   float:left;
-  width:50%;
+  width:70%;
 }
 .memory--menu-bar .right {
   text-align: right;
   float:right;
-  width:50%;
+  width:30%;
 }
 .memory--app-name {
   color:#ccc;
@@ -73,6 +73,15 @@ body {
   text-transform: uppercase;
   font-family: "Courier New";
   letter-spacing: 2px;
+}
+.copyright {
+  color:#ccc;
+  font-size:14px;
+  margin:0;
+  padding:1px 4px;
+}
+.copyright a {
+  color:#ccc;
 }
 @media screen and (max-width: 480px) {
   .memory--app-name {
