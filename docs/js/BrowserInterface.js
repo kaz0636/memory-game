@@ -178,7 +178,7 @@
     back.setAttribute("href", "#");
 
     // Set random image
-    back.style.cssText = "background-image: url(../images/pro/" + card.image + ".jpg);"
+    back.style.cssText = "background-image: url(./images/pro/" + card.image + ".jpg);"
 
     flipper.appendChild(front);
     flipper.appendChild(back);
