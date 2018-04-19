@@ -126,12 +126,24 @@ body {
   text-align: center;
 }
 
+#memory--settings-restart {
+  width:200px;
+  margin-top:16px;
+  margin-bottom:16px;
+  font-size:18px;
+  background:transparent;
+  color:#ccc;
+  height:50px;
+  text-align: center;
+}
+
 #memory--settings-grid option {
   padding-top:5px;
   padding-bottom:5px;
 }
 
-#memory--settings-reset {
+#memory--settings-reset,
+#memory--settings-restart {
   border-radius:5px;
   border:2px solid #ccc;
   cursor: pointer;
@@ -170,7 +182,7 @@ body {
 
 /* flip speed goes here */
 .flipper {
-  width:90%;
+  width:60%;
   height:90%;
   margin:0% auto;
   -webkit-transition: 0.5s;
@@ -215,9 +227,9 @@ body {
   -ms-transform: rotateY(0deg);
   -o-transform: rotateY(0deg);
   transform: rotateY(0deg);
-  background-color: #e12d00;
+  background-color: #eee;
   border-radius: 5%;
-  background-image: url(../images/card.svg);
+  background-image: url(../images/card.png);
   background-position:50% 50%;
   background-repeat: no-repeat;
   background-size: contain;

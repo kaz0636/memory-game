@@ -29,6 +29,7 @@
 
   // Handle settings form submission
   var reset = document.getElementById('memory--settings-reset');
+  var restart = document.getElementById('memory--settings-restart');
   var handleSettingsSubmission = function (event) {
     event.preventDefault();
 
@@ -47,6 +48,7 @@
 
   };
   reset.addEventListener('click', handleSettingsSubmission);
+  restart.addEventListener('click', handleOpenSettings);
 
   // Handle clicking on card
   var handleFlipCard = function (event) {
@@ -84,16 +86,16 @@
     var message = "";
 
     if (score == 100) {
-      message = "Amazing job!"
+      message = "参りました！"
     }
     else if (score >= 70 ) {
-      message = "Great job!"
+      message = "よく手が見えますね！"
     }
     else if (score >= 50) {
-      message = "Great job!"
+      message = "なかなか筋がいいですね"
     }
     else {
-      message = "You can do better.";
+      message = "うっかりがありましたか・・・"
     }
 
     return message;
@@ -174,6 +176,9 @@
       back.classList.add("matching");
     }
     back.setAttribute("href", "#");
+
+    // Set random image
+    back.style.cssText = "background-image: url(../images/pro/" + card.image + ".jpg);"
 
     flipper.appendChild(front);
     flipper.appendChild(back);
